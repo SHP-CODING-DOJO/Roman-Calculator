@@ -20,7 +20,8 @@ public class RomanCalculatorTest {
     public static Collection prepareData() {
         Object[][] data = {
                 {"I", "I", "II"},
-                {"I", "X", "XI"}
+                {"I", "X", "XI"},
+                {"II", "X", "XII"}
         };
         return Arrays.asList(data);
     }

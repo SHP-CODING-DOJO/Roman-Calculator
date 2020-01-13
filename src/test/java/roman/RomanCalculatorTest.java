@@ -19,7 +19,8 @@ public class RomanCalculatorTest {
     @Parameterized.Parameters
     public static Collection prepareData() {
         Object[][] data = {
-                {"I", "I", "II"}
+                {"I", "I", "II"},
+                {"I", "X", "XI"}
         };
         return Arrays.asList(data);
     }

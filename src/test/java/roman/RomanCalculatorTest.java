@@ -22,7 +22,8 @@ public class RomanCalculatorTest {
                 {"I", "I", "II"},
                 {"I", "X", "XI"},
                 {"II", "X", "XII"},
-                {"I", "IV", "V"}
+                {"I", "IV", "V"},
+                {"II", "II", "IV"}
         };
         return Arrays.asList(data);
     }

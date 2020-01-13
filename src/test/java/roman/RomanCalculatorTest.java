@@ -28,7 +28,8 @@ public class RomanCalculatorTest {
                 {"XX", "XX", "XL"},
                 {"L", "XL", "XC"},
                 {"CC", "CC", "CD"},
-                {"D", "CD", "CM"}
+                {"D", "CD", "CM"},
+                {"IV", "IV", "VIII"}
         };
         return Arrays.asList(data);
     }

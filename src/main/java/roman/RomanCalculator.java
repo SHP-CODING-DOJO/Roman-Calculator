@@ -52,8 +52,17 @@ public class RomanCalculator {
     private int convertRomanToNumber(String roman) {
         int result = 0;
         for (int i = 0; i < roman.length(); ++i) {
-            result += romanMap.get(String.valueOf(roman.charAt(i)));
+            Integer current = romanMap.get(getStringAt(roman, i));
+            if (i + 1 == roman.length() || romanMap.get(getStringAt(roman, i + 1)) <= current) {
+                result += current;
+            } else {
+                result -= current;
+            }
         }
         return result;
+    }
+
+    private String getStringAt(String str, int i) {
+        return String.valueOf(str.charAt(i));
     }
 }
